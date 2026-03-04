@@ -10,16 +10,18 @@
 # 2. Create a Merge Request for your feature, which triggers the feature branch MR pipeline  
 <img width="1039" height="590" alt="image" src="https://github.com/user-attachments/assets/1593f20b-a023-45e5-9621-ada68f656b8d" />
 
+## Once the MR pipeline's two jobs passes, you have to click merge, which triggers the Main pipeline 
+
 # NOTE: Our gitlab yaml file will 2 pipelines:
 1. Feature branch MR pipeline
 2. Main pipeline
 
-   
+# MR Pipeline
 Feature branch MR pipeline has 2 stages:
 1. init — initialize
 2. plan — preview changes and shows you what will be created, changed, and destroyed
 
-
+# Main Pipeline
 Main Pipeline has 5 stages:
 1. init
 2. plan
@@ -27,7 +29,7 @@ Main Pipeline has 5 stages:
 4. apply — deploy (manual click)
 5. destroy — tear down (manual click)
 
-6. Once the MR pipeline's two jobs passes, you have to click merge, which triggers the Main pipeline 
+
 <img width="1231" height="534" alt="image" src="https://github.com/user-attachments/assets/7f6d25a4-69f3-4858-87d6-c24361378434" />
 
 
