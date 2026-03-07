@@ -61,13 +61,18 @@ Main Pipeline has 5 stages:
 <img width="1231" height="534" alt="image" src="https://github.com/user-attachments/assets/7f6d25a4-69f3-4858-87d6-c24361378434" />
 
 
+
+
+
+# Frequently asked questions?
+
 ## Why init and plan run on the MR first?
 When you open a Merge Request, GitLab triggers a pipeline on your feature branch. The purpose of running init and plan at this stage is so that you and your team can review what Terraform is going to change BEFORE it gets merged to main.
 
 Think of it like a preview:
 feature branch MR pipeline
-├── init  ← sets up Terraform, confirms backend connects
-└── plan  ← shows exactly what will be created/changed/destroyed
+- init  ← sets up Terraform, confirms backend connects
+- plan  ← shows exactly what will be created/changed/destroyed
 
 You can click into the plan job logs and see output like:
 + azurerm_resource_group.rg will be created
@@ -77,10 +82,6 @@ You can click into the plan job logs and see output like:
 ## IMPORTANT: This lets you catch mistakes before they ever touch real infrastructure.
 
 <img width="723" height="500" alt="image" src="https://github.com/user-attachments/assets/15575e08-ebd9-43df-ba4b-6d4e3c39c2c6" />
-
-
-
-# Frequently asked questions?
 
 ## Why does plan run twice?
 - MR Plan - Purpose is code review
