@@ -1,13 +1,14 @@
 # CI-CD-Gitlab-Pipeline
 
-## Gitlab YAML file for Real World Production CI/CD Pipeline
-- I will break down how teams go through a CI/CD Pipeline and teach professionals how to reduce security risks.
+## This pipeline is all defined by a Gitlab YAML file.
 
 ## 1. Creating a new branch and commiting it. Never commit directly to the Main branch!
-<img width="1259" height="895" alt="image" src="https://github.com/user-attachments/assets/50beaa75-c57f-4562-9751-337393e1fb25" />
+- When you make a change to the source code, you should create a new branch and commit so that it goes through the Merge Request pipeline.
+<img width="1135" height="349" alt="image" src="https://github.com/user-attachments/assets/073d171c-acdf-4031-9b13-4f965962a89d" />
 
 
 ## 2. Create a Merge Request for your feature, which triggers the feature branch MR pipeline  
+
 <img width="1248" height="581" alt="image" src="https://github.com/user-attachments/assets/7be60257-2176-4d37-b12c-8c3d1b6af885" />
 
 ## 3. Once the MR pipeline completes, click merge to the Main pipeline
